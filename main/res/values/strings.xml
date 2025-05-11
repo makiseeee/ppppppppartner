@@ -8,7 +8,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="deepseek_api_key">sk-9a4b30f3a78248efac411c6a5d527736</string>
+    <string name="deepseek_api_key">*这里填你自己的api好了*</string>
     <string name="api_token">70fe59c0fdbd49da9d7d111a06e2fb67</string>
     <string name="org_id">15939</string>
     <string name="device_number">51146993046428423895</string>
