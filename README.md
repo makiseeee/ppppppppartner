@@ -1,4 +1,4 @@
-# elder-smile
+# partner
 Develop a device that can shrink to the size of a bedside lamp, adjustable angle, battery-powered with a battery life of over a week, capable of non-contact measurement of human and environmental indicators, including detecting human distance, heart rate, body temperature, respiration rate, sleep duration, deep sleep ratio, ambient temperature, etc., with an error margin not exceeding 5%. It should be able to upload data to our designed mobile app, and autonomously control indoor home appliances such as air conditioning based on various data.
 
 On the mobile end, it should be able to synchronize real-time information, record and analyze data, create line graphs, integrate with artificial intelligence analysis tools like deepseek, answer health-related questions, and control indoor home appliances through the device. Additionally, the mobile end should randomly display doro emojis.
