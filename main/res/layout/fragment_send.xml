@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- 开机和关机按钮 -->
+    <Button
+        android:id="@+id/btnPowerOn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="开机"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPowerOff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnPowerOff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="关机"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/btnPowerOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <!-- 自动、制冷、制热按钮在一行 -->
+    <Button
+        android:id="@+id/btnAuto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="自动"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCooling"
+        app:layout_constraintTop_toBottomOf="@id/btnPowerOff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnCooling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="制冷"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/btnAuto"
+        app:layout_constraintEnd_toStartOf="@id/btnHeating"
+        app:layout_constraintTop_toBottomOf="@id/btnPowerOff"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnHeating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="制热"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/btnCooling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPowerOff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <!-- 温度输入提示 -->
+    <TextView
+        android:id="@+id/labelTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送温度（16~30摄氏度）"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnHeating"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- 温度输入框 -->
+    <EditText
+        android:id="@+id/editTemperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入温度"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/labelTemperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- 发送按钮放到底部 -->
+    <Button
+        android:id="@+id/btnSendCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送指令"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="360dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="首页" />
+    <item
+        android:id="@+id/nav_sleep"
+        android:title="睡眠" />
+    <item
+        android:id="@+id/nav_breath"
+        android:title="呼吸" />
+    <item
+        android:id="@+id/nav_heart_rate"
+        android:title="心率" />
+    <item
+        android:id="@+id/nav_temp"
+        android:title="室温体温" />
+    <item
+        android:id="@+id/nav_relogin"
+        android:title="重新登陆" />
+    <item
+        android:id="@+id/nav_deepseek"
+        android:title="人工智能助手" />
+    <item
+        android:id="@+id/nav_send"
+        android:title="空调控制" />
+</menu>

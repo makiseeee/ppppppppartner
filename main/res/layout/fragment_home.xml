@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 表情包 ImageView -->
+        <ImageView
+            android:id="@+id/img_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="随机表情包"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 健康数据 TextView -->
+        <TextView
+            android:id="@+id/tv_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="心率: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_breath_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="呼吸率: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_sleep_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="睡眠状态: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_room_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="室温: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_body_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体温: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+        <TextView
+            android:id="@+id/tv_people_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="与人距离: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_move_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动等级: --"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>

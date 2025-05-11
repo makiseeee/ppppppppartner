@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_sleep_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="睡眠状态: --" />
+        <TextView
+            android:id="@+id/tv_sleep_status_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="参考值: --" />
+        <TextView
+            android:id="@+id/tv_sleep_status_max_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="历史最高/最低: -- / --" />
+
+        <TextView
+            android:id="@+id/tv_awake_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="清醒时长: --" />
+        <TextView
+            android:id="@+id/tv_awake_time_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="参考值: --" />
+        <TextView
+            android:id="@+id/tv_awake_time_max_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="历史最高/最低: -- / --" />
+
+        <TextView
+            android:id="@+id/tv_light_sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="浅睡时长: --" />
+        <TextView
+            android:id="@+id/tv_light_sleep_time_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="参考值: --" />
+
+        <TextView
+            android:id="@+id/tv_light_sleep_time_max_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="历史最高/最低: -- / --" />
+
+        <TextView
+            android:id="@+id/tv_deep_sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="深睡时长: --" />
+        <TextView
+            android:id="@+id/tv_deep_sleep_time_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="参考值: --" />
+        <TextView
+            android:id="@+id/tv_deep_sleep_time_max_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="历史最高/最低: -- / --" />
+
+        <TextView
+            android:id="@+id/tv_sleep_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="睡眠质量评分: --" />
+        <TextView
+            android:id="@+id/tv_sleep_score_range"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="参考值: --" />
+        <TextView
+            android:id="@+id/tv_sleep_score_max_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="历史最高/最低: -- / --" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/chart_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>
